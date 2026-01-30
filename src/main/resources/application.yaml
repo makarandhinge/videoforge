@@ -1,3 +1,9 @@
 spring:
   application:
     name: Video Forge
+  servlet:
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+server:
+  port: 8081
