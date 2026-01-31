@@ -5,5 +5,13 @@ spring:
     multipart:
       max-file-size: 1000MB
       max-request-size: 1000MB
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/videoforge
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
 server:
   port: 8081
